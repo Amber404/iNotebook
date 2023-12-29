@@ -1,5 +1,5 @@
 const mongoose=require('mongoose')
-const mongoURI='mongodb://localhost:27017'
+const mongoURI='mongodb://127.0.0.1:27017/iNotebook';
 const ConnectToMongo=()=>{
    mongoose.connect(mongoURI,()=>{
     console.log("connected to db")
@@ -7,3 +7,4 @@ const ConnectToMongo=()=>{
 }
 
 module.exports=ConnectToMongo
+  
